@@ -7,7 +7,6 @@
 #   neighbors for all timesteps at once, dramatically speeding up preprocessing.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-29
 # ======================================================================================
 
 import torch

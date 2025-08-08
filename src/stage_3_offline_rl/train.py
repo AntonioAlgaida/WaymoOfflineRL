@@ -12,7 +12,6 @@
 #   5. Logs progress and saves model checkpoints.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-08-02
 # ======================================================================================
 
 import torch

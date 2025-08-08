@@ -8,7 +8,6 @@
 #   creates a cleaner, less noisy dataset for training.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-08-01
 # ======================================================================================
 
 import torch

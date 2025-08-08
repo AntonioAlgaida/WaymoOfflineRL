@@ -6,7 +6,6 @@
 #   across different scripts in the WaymoOfflineAgent project.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-31
 # ======================================================================================
 
 import os

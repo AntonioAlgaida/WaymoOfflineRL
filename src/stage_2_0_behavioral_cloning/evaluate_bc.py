@@ -12,7 +12,6 @@
 #   6. Saves a video of the resulting simulation rollout.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-30
 # ======================================================================================
 
 import torch

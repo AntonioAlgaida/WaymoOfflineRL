@@ -14,7 +14,6 @@
 # environment is ready for model development in Stage 2.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-29
 # ======================================================================================
 
 import numpy as np

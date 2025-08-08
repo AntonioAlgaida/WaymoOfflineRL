@@ -7,7 +7,6 @@
 #   highly optimized NumPy operations, eliminating the last major performance bottleneck.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-29
 # ======================================================================================
 
 import torch

@@ -8,7 +8,6 @@
 #   for each transition, saving the final (state, action) pairs.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-31
 # ======================================================================================
 
 import torch

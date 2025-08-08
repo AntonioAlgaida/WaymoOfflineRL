@@ -7,7 +7,6 @@
 #   of the data, and the results are combined before calculating the final weights.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-31
 # ======================================================================================
 import torch
 import numpy as np

@@ -9,7 +9,6 @@
 #   efficient NumPy .npz files. Each .npz file corresponds to a single scenario.
 #   Use conda activate womd-parser
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-29
 # ======================================================================================
 
 import tensorflow as tf

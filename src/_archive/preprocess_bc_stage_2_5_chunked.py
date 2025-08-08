@@ -7,7 +7,6 @@
 #   dramatically improves I/O performance during training.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-08-01
 # ======================================================================================
 import torch
 import numpy as np

@@ -8,7 +8,6 @@
 #   which dramatically speeds up the training loop.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-07-29
 # ======================================================================================
 
 import torch

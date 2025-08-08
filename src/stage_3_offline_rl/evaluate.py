@@ -6,7 +6,6 @@
 #   it in a closed-loop simulation using the Waymax environment.
 #
 # Author: Antonio Guillen-Perez
-# Date: 2025-08-01
 # ======================================================================================
 
 import torch
