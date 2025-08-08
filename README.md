@@ -64,12 +64,16 @@ The project's main finding is that while sophisticated imitation learning agents
 
 ### **Qualitative Comparison: Simulation Rollouts**
 
-The following videos, evaluated on the same challenging scenarios, visually demonstrate the performance gap.
+The following videos provide a direct, qualitative comparison of the final trained agents, all evaluated on the same challenging unseen scenarios. The iterative improvement is clear: while architectural enhancements provide some gains, the shift from imitation learning to offline reinforcement learning is what enables robust, long-horizon control.
 
-| Baseline: Structured BC (Stage 2.6) | Advanced Baseline: Transformer BC (Stage 2.7) | Final Agent: Offline RL (Stage 3) |
+*The SDC is the blue agent. The dotted line shows the agents recent path.*
+
+| Baseline: Structured MLP (BC-S) | Advanced Baseline: Transformer BC (BC-T) | Final Agent: Offline RL (CQL) |
 | :---: | :---: | :---: |
-| <video src="assets/videos/bcs_rollout.mp4" width="300" controls="true"></video> | <video src="assets/videos/bct_rollout.mp4" width="300" controls="true"></video> | <video src="assets/videos/cql_rollout.mp4" width="300" controls="true"></video> |
-| **Observation:** The structured MLP agent fails to handle the complex interactions and drives erratically. | **Observation:** The Transformer agent understands the scene better but is brittle. Small errors compound, leading to a "circling" failure mode. | **Observation:** The CQL agent successfully recovers from minor errors, demonstrating robust, long-horizon control to complete the maneuver. |
+| <video src="https://github.com/AntonioAlgaida/WaymoOfflineRL/raw/main/assets/videos/bcs_rollout.mp4" controls="true"></video> | <video src="https://github.com/AntonioAlgaida/WaymoOfflineRL/raw/main/assets/videos/bct_rollout.mp4" controls="true"></video> | <video src="https://github.com/AntonioAlgaida/WaymoOfflineRL/raw/main/assets/videos/cql_rollout.mp4" controls="true"></video> |
+| **Observation:** The structured MLP agent fails to handle complex interactions and drives erratically. | **Observation:** The Transformer is more stable initially but is brittle. Small errors compound, leading to a "circling" failure mode. | **Observation:** The CQL agent successfully recovers from minor errors, demonstrating robust control to complete the maneuver. |
+
+*(A more extensive gallery of videos is available directly in the [`assets/videos`](assets/videos) directory.)*
 
 ---
 
