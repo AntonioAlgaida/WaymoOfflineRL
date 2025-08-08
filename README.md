@@ -70,7 +70,7 @@ The following videos provide a direct, qualitative comparison of the final train
 
 | Baseline: Structured MLP (BC-S) | Advanced Baseline: Transformer BC (BC-T) | Final Agent: Offline RL (CQL) |
 | :---: | :---: | :---: |
-| <video src="https://github.com/AntonioAlgaida/WaymoOfflineRL/raw/main/assets/videos/bcs_rollout.mp4" controls="true"></video> | <video src="https://github.com/AntonioAlgaida/WaymoOfflineRL/raw/main/assets/videos/bct_rollout.mp4" controls="true"></video> | <video src="https://github.com/AntonioAlgaida/WaymoOfflineRL/raw/main/assets/videos/cql_rollout.mp4" controls="true"></video> |
+| ![BC-S Agent Rollout](assets/videos/bcs_rollout.gif) | ![BC-T Agent Rollout](assets/videos/bct_rollout.gif) | ![CQL Agent Rollout](assets/videos/cql_rollout.gif) |
 | **Observation:** The structured MLP agent fails to handle complex interactions and drives erratically. | **Observation:** The Transformer is more stable initially but is brittle. Small errors compound, leading to a "circling" failure mode. | **Observation:** The CQL agent successfully recovers from minor errors, demonstrating robust control to complete the maneuver. |
 
 *(A more extensive gallery of videos is available directly in the [`assets/videos`](assets/videos) directory.)*
@@ -89,9 +89,7 @@ The progression clearly shows how architectural improvements provide marginal ga
 *   **Architecture:** MLP with Entity Encoders
 *   **Observation:** The structured input gives the agent a basic understanding of the scene, but the simple aggregation method (max-pooling) and the limitations of imitation learning cause it to fail. It cannot handle the complex interactions during the turn and drives erratically.
 
-<p align="center">
-  <video src="/home/anton/WaymoOfflineAgent/outputs/evaluations/stage_2_6_structured_bc/25d02e3c4b938ac8_bcs_rollout.mp4" width="600" controls="true"></video>
-</p>
+![BC-S Agent Rollout](assets/videos/bcs_rollout.gif) 
 
 ---
 
@@ -99,10 +97,7 @@ The progression clearly shows how architectural improvements provide marginal ga
 *   **Architecture:** Transformer Encoder
 *   **Observation:** The Transformer's self-attention mechanism provides a much richer understanding of the scene context. The agent correctly initiates the turn and understands its relationship with the lane geometry for a longer duration. However, as small prediction errors accumulate, it is pushed into an out-of-distribution state. Lacking a goal or a recovery mechanism, its policy collapses into a repeating "circling" failure mode.
 
-<p align="center">
-  <!-- Replace this with the path to your BC-T video once it's ready -->
-  <video src="assets/videos/bct_rollout.mp4" width="600" controls="true"></video>
-</p>
+![BC-T Agent Rollout](assets/videos/bct_rollout.gif)
 
 ---
 
@@ -110,10 +105,7 @@ The progression clearly shows how architectural improvements provide marginal ga
 *   **Architecture:** Transformer Encoder + CQL
 *   **Observation:** The CQL agent, using the same powerful Transformer architecture, successfully navigates the turn. When it encounters minor deviations from the expert data, its learned **value function** provides a corrective signal, guiding it towards actions that lead to high long-term rewards (i.e., completing the turn safely). This ability to **recover from its own errors** is the key difference and the primary success of the Offline RL approach.
 
-<p align="center">
-  <!-- Replace this with the path to your final CQL video once it's ready -->
-  <video src="assets/videos/cql_rollout.mp4" width="600" controls="true"></video>
-</p>
+![CQL Agent Rollout](assets/videos/cql_rollout.gif)
 
 ---
 
