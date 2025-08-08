@@ -1,0 +1,714 @@
+{
+    "model_type": "cql",
+    "checkpoint_path": "/home/anton/WaymoOfflineAgent/runs/CQL_MLP_2025-08-07_07-50-00_lr3e-05_gamma0.95_cqlalpha10.0/models/cql_mlp_policy_epoch_10.pth",
+    "num_scenarios_evaluated": 100,
+    "aggregation": {
+        "success_rate": 17.0,
+        "collision_rate": 37.0,
+        "off_road_rate": 0.0,
+        "goal_completion_rate": 19.0,
+        "error_rate": 0.0
+    },
+    "per_scenario_results": [
+        {
+            "scenario_id": "10040e572b831a04",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1008aa4114dbc237",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1008b7b63e2d60",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1008f05c233dd975",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1015e9446e86cfa0",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "101b00dd28e01037",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "101ba4c98d705f0",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "101d7af08d9b56ae",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "102ac3a7db12726a",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10354c249f529dfd",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "103611a85b0afed0",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "103728b58f015a10",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1043253438261566",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "104a42b453001ed3",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1057de7048dba557",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1058032e9c59ca7a",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "105f0df5727cd896",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10606bfe39ef5fed",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10668c776be221ad",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "106709341a213258",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1067675c60c5ec68",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1068d41d2b046c91",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10709af0b09ceecc",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "1075e041269478e0",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1076d32f0f66fc15",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1081536c3484a484",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1084f1f54231557d",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "10877f919155207f",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "109bafe59bf75642",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10a65cdcd8def71a",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10b15ae62cf6a249",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "10b2ade58a91602d",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10b665e4f89d509c",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10b785078230b4d1",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10bc6ab41ff63646",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10c3b27f9593de61",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10ccb252a82fb5af",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10ce573671ddcaaa",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "10df9646a81a1087",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "10e0922055fa5744",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10e22c943918842d",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10f35f671ad97c1b",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10f4208228991825",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "10f6cde79e7c05c2",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "10f8cc283675354d",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1100c5d482b1df45",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "110300563a0ffa6d",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "110523b0200f94e5",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "110f84cd12b421a9",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "111582b5ceeff9e2",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "111bb47bff784423",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "111e93786ed04d57",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "111f9e9afe079aa1",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "11228bfd881bab21",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "1129bf4d50f8e1d5",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "112cbf9d5060c9ae",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1140547d4af50595",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1156f1010bc74853",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11571e0e216e29bf",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": false
+        },
+        {
+            "scenario_id": "115c5ec1589d7a43",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "115e0a191c46e3e9",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "115f889cc0f6cab5",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1162d1885cd3588a",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1167875f687bbaa3",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "116c79b76273059d",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11702fb5932bff75",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1173a76179193141",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "1174c3c008ec284",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11771f7b648a1169",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1178904a579d03e",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "117ba73600741c6e",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1180070d475c0a9f",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1184ff31415cd23d",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11892a15469cc297",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "119bc8aa40abe166",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11a587ade5947564",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11a97bc2558b5267",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "11aabed9e11c43d5",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11b1f787fb6fe7f9",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11b7c415740971b0",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11bab58cff09d39f",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11be030f0cd0b1f3",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11c1f8dfcfd8db91",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11c5c938de37fa21",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11c6f3b6ae1707db",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11c7caaf4415beab",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11cced446f7933e0",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "11d22cfee931bf59",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "11e578faa23d06cc",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1207b9e6eca7717b",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "121d9a6b26bb1414",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": true,
+            "is_success": true
+        },
+        {
+            "scenario_id": "1227eec84d8a2467",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "122882ccead5e719",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "122e7660fd23fea2",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "1233cd0a58d6c046",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "12398c6a2592b0d2",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "123d99a86787aa74",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "124593ed0a710a8c",
+            "collided": true,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "124e729ee3f6e0c4",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        },
+        {
+            "scenario_id": "125635eaf838cbf4",
+            "collided": false,
+            "off_road": false,
+            "goal_completed": false,
+            "is_success": false
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Test Reward Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_3_offline_rl.reward_function",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Test Dataset Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_3_offline_rl.dataset",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Test Train Stage 3 Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_3_offline_rl.train",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Test Train Stage 2.6 Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_2_6_structured_bc.train",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Test Preprocess Stage 3 Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_3_offline_rl.preprocess",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        
+        {
+            "name": "Python: Evaluate Stage 2_8 Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_2_8_structured_mlp_bc.evaluate",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Train Stage 3_1 Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_3_1_structured_mlp_cql.train",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Evalaute Stage 4_ Function",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.stage_4_evaluation.run_evaluation",
+            "console": "integratedTerminal",
+            "args": [
+                "--model_type", "bcs",
+                "--checkpoint_path", "~/WaymoOfflineAgent/models/bc_structured_policy_v2.pth",
+                "--output_path", "~/WaymoOfflineAgent/outputs/eval_results/bcs_v2_results.json",
+                "--num_scenarios", "50"
+            ],
+            "justMyCode": true
+        },
+    ]
+}
