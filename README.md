@@ -1,22 +1,44 @@
 # Robust Offline Learning for Autonomous Driving
 
+<p align="center">
 This repository contains the complete code and documentation for a research project on learning robust, closed-loop driving policies from the large-scale Waymo Open Motion Dataset. The project explores and compares several state-of-the-art machine learning techniques, from advanced Behavioral Cloning to Offline Reinforcement Learning (CQL).
+</p>
 
-**Author:** Antonio Guillen-Perez  
-**Contact:** antonio_algaida@hotmail.com | [[in/antonioguillenperez]](https://www.linkedin.com/in/antonioguillenperez/) | 
+<p align="center">
+  <a href="https://arxiv.org/abs/2508.07029" target="_blank">
+    <img src="https://img.shields.io/badge/ArXiv-2508.07029-b31b1b.svg?style=flat-square" alt="ArXiv Paper">
+  </a>
+  <a href="http://arxiv.org/licenses/nonexclusive-distrib/1.0/" target="_blank">
+    <img src="https://img.shields.io/badge/Paper%20License-arXiv%20Perpetual-b31b1b.svg?style=flat-square" alt="ArXiv Paper License">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/Code%20License-MIT-blue.svg?style=flat-square" alt="Code License">
+  </a>
+  <a href="https://pytorch.org/">
+    <img src="https://img.shields.io/badge/Made%20with-PyTorch-EE4C2C.svg?style=flat-square&logo=pytorch" alt="Made with PyTorch">
+  </a>
+  <img src="https://img.shields.io/badge/Python-3.10-3776AB.svg?style=flat-square&logo=python" alt="Python 3.10">
+</p>
+
+<p align="center">
+  A project by <strong>Antonio Guillen-Perez</strong> | 
+  <a href="https://antonioalgaida.github.io/" target="_blank"><strong>Portfolio</strong></a> | 
+  <a href="https://www.linkedin.com/in/antonioguillenperez/" target="_blank"><strong>LinkedIn</strong></a> | 
+  <a href="https://scholar.google.com/citations?user=BFS6jXwAAAAJ" target="_blank"><strong>Google Scholar</strong></a>
+</p>
 
 ---
 
 - [Robust Offline Learning for Autonomous Driving](#robust-offline-learning-for-autonomous-driving)
-  - [🚀 Project Overview](#-project-overview)
-  - [📊 Key Results: From Imitation to Optimization](#-key-results-from-imitation-to-optimization)
+  - [Project Overview](#project-overview)
+  - [Key Results: From Imitation to Optimization](#key-results-from-imitation-to-optimization)
     - [**Quantitative Comparison**](#quantitative-comparison)
     - [**Qualitative Comparison: Simulation Rollouts**](#qualitative-comparison-simulation-rollouts)
-  - [🎥 Visual Results: A Tale of Three Agents](#-visual-results-a-tale-of-three-agents)
+  - [Visual Results: A Tale of Three Agents](#visual-results-a-tale-of-three-agents)
     - [**Baseline Agent: Structured BC (Stage 2.6)**](#baseline-agent-structured-bc-stage-26)
     - [**Advanced Baseline: Transformer BC (Stage 2.7)**](#advanced-baseline-transformer-bc-stage-27)
     - [**Final Agent: Offline Reinforcement Learning (Stage 3)**](#final-agent-offline-reinforcement-learning-stage-3)
-  - [🔬 Methodology: A Stage-by-Stage Walkthrough](#-methodology-a-stage-by-stage-walkthrough)
+  - [Methodology: A Stage-by-Stage Walkthrough](#methodology-a-stage-by-stage-walkthrough)
     - [**Stage 1: Data Parsing and Environment Setup**](#stage-1-data-parsing-and-environment-setup)
       - [**Stage 2.5: Kinematic Behavioral Cloning (BC-K)**](#stage-25-kinematic-behavioral-cloning-bc-k)
     - [**Stage 2.7: Transformer-based Behavioral Cloning (BC-T)**](#stage-27-transformer-based-behavioral-cloning-bc-t)
@@ -26,17 +48,19 @@ This repository contains the complete code and documentation for a research proj
     - [**Evaluation Pipeline (`src/stage_4_evaluation/run_evaluation.py`)**](#evaluation-pipeline-srcstage_4_evaluationrun_evaluationpy)
     - [**Key Metrics**](#key-metrics)
     - [**How to Run the Evaluation**](#how-to-run-the-evaluation)
-  - [🛠️ Project Structure](#️-project-structure)
-  - [⚙️ Setup and Installation](#️-setup-and-installation)
-  - [🚀 How to Run the Pipeline](#-how-to-run-the-pipeline)
-  - [📜 State and Action Representation](#-state-and-action-representation)
+  - [Project Structure](#project-structure)
+  - [Setup and Installation](#setup-and-installation)
+  - [How to Run the Pipeline](#how-to-run-the-pipeline)
+  - [State and Action Representation](#state-and-action-representation)
     - [**State Representation**](#state-representation)
     - [**Action Representation**](#action-representation)
-  - [💡 Key Learnings and Future Work](#-key-learnings-and-future-work)
+  - [Key Learnings and Future Work](#key-learnings-and-future-work)
+  - [Acknowledgments and Citation](#acknowledgments-and-citation)
+    - [Citing this Work](#citing-this-work)
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 The goal of this project is to develop an autonomous driving agent that can learn to navigate complex, multi-agent traffic scenarios by learning from a fixed dataset of expert human driving logs. This is a core problem in modern autonomy, as training in the real world is unsafe and impractical.
 
@@ -49,7 +73,7 @@ This repository demonstrates an end-to-end machine learning pipeline, including:
 
 ---
 
-## 📊 Key Results: From Imitation to Optimization
+## Key Results: From Imitation to Optimization
 
 The project's main finding is that while sophisticated imitation learning agents (like the Transformer-based BC-T) are excellent one-step predictors, they are not robust in long-horizon, closed-loop scenarios due to **compounding errors**. The Offline RL (CQL) agent, which learns a conservative value function, proves to be dramatically more successful and reliable.
 
@@ -77,7 +101,7 @@ The following videos provide a direct, qualitative comparison of the final train
 
 ---
 
-## 🎥 Visual Results: A Tale of Three Agents
+## Visual Results: A Tale of Three Agents
 
 The most effective way to understand the impact of different architectures and learning paradigms is to see them in action. The following videos showcase the closed-loop performance of the key agents developed in this project, all evaluated on the **same challenging, unprotected left-turn scenario**.
 
@@ -109,7 +133,7 @@ The progression clearly shows how architectural improvements provide marginal ga
 
 ---
 
-## 🔬 Methodology: A Stage-by-Stage Walkthrough
+## Methodology: A Stage-by-Stage Walkthrough
 
 This project was developed iteratively, with each stage building upon the last to solve a specific problem.
 
@@ -206,7 +230,7 @@ python -m src.stage_4_evaluation.run_evaluation \
 
 ---
 
-## 🛠️ Project Structure
+## Project Structure
 
 The project is organized into distinct, modular stages, each located in its own subdirectory within `src/`.
 
@@ -230,7 +254,7 @@ WaymoOfflineAgent/
 
 ---
 
-## ⚙️ Setup and Installation
+## Setup and Installation
 
 This project is developed in a WSL2 (Ubuntu) environment and uses Conda for package management.
 
@@ -256,7 +280,7 @@ This project is developed in a WSL2 (Ubuntu) environment and uses Conda for pack
 
 ---
 
-## 🚀 How to Run the Pipeline
+## How to Run the Pipeline
 
 All scripts should be run from the project's root directory (`WaymoOfflineAgent/`) using the `python -m` flag.
 
@@ -288,7 +312,7 @@ python -m src.stage_2_8_transformer_bc.evaluate <some-scenario-id>
 
 ---
 
-## 📜 State and Action Representation
+## State and Action Representation
 
 ### **State Representation**
 The agents are trained on a rich, structured state representation where all spatial features are in an **ego-centric reference frame**. The state is passed to the models as a dictionary of tensors, detailed in the table below.
@@ -312,7 +336,7 @@ The agent's control policy is defined in a physically-plausible kinematic space.
 
 ---
 
-## 💡 Key Learnings and Future Work
+## Key Learnings and Future Work
 
 *   **Key Learnings:**
     *   This project empirically demonstrates that while sophisticated architectures like Transformers can significantly improve imitation loss, they do not inherently solve the **compounding error** problem in closed-loop control.
@@ -322,3 +346,24 @@ The agent's control policy is defined in a physically-plausible kinematic space.
     *   **Quantitative Evaluation:** Implement a full Stage 4 evaluation suite to run the final trained agents (BC-T and CQL) on hundreds of held-out scenarios to collect statistically significant metrics (collision rate, off-road rate, goal completion).
     *   **Advanced Reward Engineering:** The reward function in Stage 3 could be further improved by incorporating more nuanced map-based rules, such as penalties for crossing solid lines or failing to yield at stop signs.
     *   **Multi-modality:** The Waymo dataset also includes Lidar and camera data. A future version of this project could explore fusing these modalities into the state representation for an even richer understanding of the scene.
+
+---
+## Acknowledgments and Citation
+
+This research was made possible by the use of the following outstanding, publicly available datasets and simulation tools. We extend our sincere gratitude to the research teams at Waymo for providing these resources to the community.
+
+*   **[Waymo Open Motion Dataset (WOMD)](https://waymo.com/open/data/motion/)**: The large-scale, real-world dataset used for all training and evaluation in this project.
+*   **[Waymax Simulator](https://github.com/waymo-research/waymax)**: The high-fidelity, JAX-based simulator used for all closed-loop evaluation.
+
+### Citing this Work
+
+If you find this work useful in your own research, please consider citing our paper:
+
+```bibtex
+@article{GuillenPerez2024OfflineRL,
+  title   = {From Imitation to Optimization: A Comparative Study of Offline Learning for Autonomous Driving},
+  author  = {Guillen-Perez, Antonio},
+  journal = {arXiv preprint arXiv:2508.07029},
+  year    = {2025}
+}
+```
